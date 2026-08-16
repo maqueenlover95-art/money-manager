@@ -1,0 +1,9 @@
+{
+  "name": "Money Manager",
+  "short_name": "Money Manager",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f2f4f7",
+  "theme_color": "#222222"
+}
+

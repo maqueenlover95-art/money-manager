@@ -1,0 +1,4 @@
+2026-08-16 11:40 | Food ₹100.0 | Travel ₹150.0 | Other ₹200.0 | Total ₹450.0
+2026-08-16 11:45 | Food ₹100.0 | Travel ₹150.0 | Other ₹200.0 | Total ₹450.0
+2026-08-16 11:47 | Food ₹70.0 | Travel ₹200.0 | Other ₹250.0 | Total ₹520.0
+2026-08-16 11:53 | Budget ₹500.0 | Food ₹70.0 | Travel ₹100.0 | Other ₹200.0 | Total ₹370.0 | Balance ₹130.0

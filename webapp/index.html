@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Money Manager</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 450px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    margin-top: 15px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+input, button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    background: #222;
+    color: white;
+    font-weight: bold;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Money Manager</h1>
+
+<div class="card">
+
+<h2>Add Expense</h2>
+
+<input type="number" id="budget" placeholder="Daily Budget">
+
+<input type="number" id="food" placeholder="Food">
+
+<input type="number" id="travel" placeholder="Travel">
+
+<input type="number" id="other" placeholder="Other">
+
+<button onclick="calculate()">Calculate</button>
+
+<div class="result" id="result"></div>
+
+</div>
+
+<div class="card">
+
+<h2>History</h2>
+
+<div id="history">No expenses yet.</div>
+
+</div>
+
+</div>
+
+<script>
+
+function calculate() {
+
+let budget =
+Number(document.getElementById("budget").value) || 0;
+
+let food =
+Number(document.getElementById("food").value) || 0;
+
+let travel =
+Number(document.getElementById("travel").value) || 0;
+
+let other =
+Number(document.getElementById("other").value) || 0;
+
+let total = food + travel + other;
+
+let remaining = budget - total;
+
+document.getElementById("result").innerHTML =
+"Total Expense: " + total +
+"<br>Remaining: " + remaining;
+
+document.getElementById("history").innerHTML =
+"Food: " + food +
+"<br>Travel: " + travel +
+"<br>Other: " + other +
+"<br><b>Total: " + total + "</b>";
+
+}
+
+</script>
+
+</body>
+</html>
+
