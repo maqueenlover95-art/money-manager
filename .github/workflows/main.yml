@@ -26,9 +26,9 @@ jobs:
       - name: Install Android SDK
         run: |
           sdkmanager "platform-tools"
-          sdkmanager "platforms;android-35"
-          sdkmanager "build-tools;35.0.0"
+          sdkmanager "platforms;android-36"
 
+sdkmanager "platforms;android-36" "build-tools;36.0.0"
       - name: Install npm dependencies
         run: npm ci
 
